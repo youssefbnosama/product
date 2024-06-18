@@ -1,0 +1,206 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+p{
+  font-size: 16px;
+}
+.navbar{
+  padding:30px 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .links{
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+}
+.navbar .links li{
+  align-self: center;
+  cursor: pointer;
+}
+.navbar .links h2{
+  font-weight: 700
+}
+.navbar .user{
+  width: 15%;
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+}
+.avatar{
+  width:30px;
+  heigh: auto;
+  align-self: center;
+}
+.hr{
+  width: 85%;
+  margin: 20px auto 50px;
+}
+.product{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 55%;
+  margin: auto;
+  justify-content: space-between;
+  gap: 40px;
+}
+.product .left{
+  height: 100%;
+}
+.product .left .mainImg{
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  margin-bottom: 20px
+}
+.product .left .imgs{
+  display: flex;
+  justify-content: space-between;
+}
+.product .left .imgs img{
+  width: 20%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.product .left .imgs img:hover{
+  opacity: 0.3;
+
+}
+.mainImg{
+  width: 20%;
+  height: auto;
+}
+.active{
+  opacity: 0.3;
+}
+.product .right{
+  display:flex ;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+.product .right h4{
+  color: gray;
+}
+.product .right h2{
+  font-weight: 700;
+  font-size: 30px;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  flex-wrap: wrap;
+}
+.price h3{
+  font-weight: 700;
+  font-size: 25px;
+}
+.price .offer{
+  align-self: center;
+  color: white;
+  background-color: black;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.lastPrice{
+  padding: 5px 0 0;
+  color: gray;
+  text-decoration: line-through;
+}
+.buy{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.buy .left{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: hsl(223, 64%, 98%);
+  border-radius: 5px;
+}
+.buy .left button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: unset;
+  color: orange;
+  font-size: 25px;
+}
+span{
+  align-self: center;
+}
+.buy .right{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 8px;
+}
+.buy .right:hover{
+  opacity: 0.7;
+}
+.cart{
+  position: absolute;
+  width: 23%;
+  min-height: 20%;
+  top: 12%;
+  left: 70%;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  background-color: white;
+}
+.headCart{
+  padding: 12px;
+}
+.cartIcon{
+  cursor: pointer;
+}
+.cart .card{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+  width: 90%;
+  margin: auto;
+}
+.cart .card img{
+  width: 20%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.cart  button{
+  display: block;
+  width: 80%;
+  cursor: pointer;
+  background-color: hsl(26, 100%, 55%)  ;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 15px auto;
+}
+.cart  button:hover{
+  opacity: 0.5;
+}
+.empty{
+  text-align: center;
+  padding: 10px;
+}
